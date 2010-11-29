@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>lance.im</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="jquery-1.4.4.min.js"></script>
+        <script src="js/util.js"></script>
+        <script src="js/libgame.js"></script>
+        <script src="js/orion.js"></script>
+    </head>
+    <body>
+        <header>
+            <hgroup>
+                <h1>lance<span>.im</span></h1>
+                <h2>real-time communications <span>&amp;</span> web development</h2>
+            </hgroup>
+            <div class="groove"></div>
+        </header>
+
+        <section id="portfolio">
+            <h2>Latest Projects<div class="groove"></div></h2>
+
+            <section>
+                <h3>SleekXMPP</h3>
+                <p>During the summer of 2010, I gained co-authorship of the <a href="http://github.com/fritzy/SleekXMPP">SleekXMPP Python library for XMPP</a>. SleekXMPP is featured in the O'Reily book <a href="http://oreilly.com/catalog/9780596521271">XMPP: The Definitive Guide</a>. I have since greatly expanded the unit testing coverage, added new testing features that allow for live XMPP connections to be monitored and checked, and many other overhauls to bring the codebase to a 1.0 release-ready state.</p>
+                <ul class="tags">
+                    <li>Python</li>
+                    <li>XMPP</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Kestrel</h3>
+                <p>What started as a group class project during the spring of 2009, has turned into an XMPP-based job dispatching and scheduling system. Tasks are distributed to worker agents based on their current presence state, allowing for rescheduling when a worker unexpectedly disconnects. Kestrel was used during the summer of 2010 by the <a href="http://www.star.bnl.gov/">STAR group at the Brookhaven National Laboratory</a> for running proton collision simulations.</p>
+                <h4>Related Publications</h4>
+                <ul>
+                    <li><a href="http://portal.acm.org/citation.cfm?id=1646468.1646479">Kestrel: an XMPP-based Framework for Many Task Computing Applications</a></li>
+                    <li><a href="http://portal.acm.org/citation.cfm?id=1851476.1851578">Scaling Virtual Organization Clusters over a Wide Area Network using the Kestrel Workload Management System</a></li>
+                </ul>
+                <ul class="tags">
+                    <li>Python</li>
+                    <li>XMPP</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Weld</h3>
+                <p><a href="http://github.com/legastero/Weld">Weld</a> is a basic email to XMPP gateway using Gmail's new mail notifications to simplify polling for new messages. The main use for Weld is as a link to create a SMS to XMPP gateway by converting to and from email in the middle using the SMS gateways provided by carriers. The library is written in Python and is <a href="http://pypi.python.org/pypi/weld">available from PyPI</a>.</p>
+                <ul class="tags">
+                    <li>Python</li>
+                    <li>XMPP</li>
+                </ul>
+            </section>
+
+            <section>
+                <canvas id='orion' 
+                        width="400"
+                        height="300"
+                        data-game="startOrion" 
+                        data-fps="30">
+                </canvas>
+                <script>
+                    var game = launchGame("#orion");
+                </script>
+                <h3>Orion</h3>
+                <p>Orion is an experiment with using HTML5's new canvas element. The goal is to create a simple multiplayer game using XMPP and JavaScript, but only the basic library for interacting with the canvas has been completed so far.</p>
+                <ul class="tags">
+                    <li>JavaScript</li>
+                </ul>
+            </section>
+
+            <h2>Previous Projects<div class="groove"></div></h2>
+
+            <section>
+                <h3>TimeHack <span>2010</span></h3>
+                <img src="portfolio/timehack_2.png" />
+                <p><a href="lance.im/timehack">TimeHack</a> was an experiment with using HTML5's new audio features. The project is a simple timer for the <a href="http://www.43folders.com/2005/10/11/procrastination-hack-1025">(10+2)*5</a> productivity technique, similar to the <a href="http://www.pomodorotechnique.com/">Pomodoro</a> method. A calming Tibetan bell chimes when it is time to take a break or return to work.</p>
+                <ul class="tags">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </section>
+
+            <section>
+                <img src="portfolio/katie_caputo_1.png"  />
+                <h3>katiecaputo.com <span>2010</span></h3>
+                <p>A <a href="http://katiecaputo.com">portfolio website</a> for my fiance&eacute;. I did the coding and created the layout and design direction while she created the graphics to match. The entire development process from <q>I need a portfolio site <strong>now</strong></q> to final publication was a solid 48 hours. The artwork portfolios work using jQuery.
+                <ul class="tags">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>PHP</li>
+                </ul>
+            </section>
+
+            <section>
+                <img src="portfolio/messagegrid_1.png"  />
+                <h3>MessageGrid Redesign Contest <span>2009</span></h3>
+                <p>During the spring of 2009, a campus-wide contest was announced for redesigning the web interface for the MessageGrid application created by Clemson's Computer Science department. My entry won first place in that contest out of fifteen contestants.</p>
+                <ul class="tags">
+                    <li>Design</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </section>
+
+            <section>
+                <img src="portfolio/cooleemee_1.png"  />
+                <h3>The Town of Cooleemee, NC <span>2008</span></h3>
+                <p>In 2008 I was commsissioned to redesign the website for the <a href="http://townofcooleemeenc.gov">Town of Cooleemee, NC</a> after a data loss incident destroyed their previous site. The site was based on a set of XML data files and was converted to a final, static HTML site using XSLT. I was also hired to convert the town's Code of Ordinances into a downloadable PDF format.</p>
+                <ul class="tags">
+                    <li>XML</li>
+                    <li>XSLT</li>
+                    <li>LaTeX</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+            </section>
+
+            <section>
+                <img src="portfolio/powerware_2.png"  />
+                <h3>Powerware <span>2005-2008</span></h3>
+                <p>Powerware was a content management and resource tracking system for that I developed for church ministries. At the start in 2005, it used a custom MVC PHP framework but was eventually migrated to CodeIgniter. The system provided an event calendar, work schedules, room and vehicle reservations, and team membership management. The information stored in the MySQL database used by Powerware was used to also run a public facing web site.</p>
+                <p>Over its three year lifespan, Powerware was used by four different organizations until Facebook made it obsolete.</p>
+                <ul class="tags">
+                    <li>MySQL</li>
+                    <li>PHP</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Email</li>
+                    <li>CodeIgniter</li>
+                </ul>
+            </section>
+        </section>
+        <footer>
+            <div class="groove"></div>
+            <nav>
+                <h4>Also Find Me At:</h4>
+                <ul>
+                    <li><a href="http://linkedin.com/in/lancestout">LinkedIn</a></li>
+                    <li><a href="http://github.com/legastero">GitHub</a></li>
+                    <li><a href="http://bitbucket.com/legastero">BitBucket</a></li>
+                </ul>
+            </nav>
+            <small>Copyright &copy; 2010 Lance Stout</small>
+        </footer>
+    </body>
+</html>
